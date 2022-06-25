@@ -69,6 +69,8 @@ const handleEdit = (obj) => {
   obj.isCompleted ? check.setAttribute("checked", "") : null;
   bookEditId = obj.id;
   edit = true;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 const handleDelete = (obj) => {
